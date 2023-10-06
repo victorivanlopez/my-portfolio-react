@@ -1,6 +1,9 @@
+import { PortfolioLayout } from "../Layout/PortfolioLayout"
 
 export const HomePage = () => {
   return (
-    <h1>HomePage</h1>
+    <PortfolioLayout>
+      <h1>HomePage</h1>
+    </PortfolioLayout>
   )
 }
