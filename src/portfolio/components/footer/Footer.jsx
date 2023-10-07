@@ -1,4 +1,4 @@
-import { getCurrentYear } from '../../helpers';
+import { getCurrentYear } from '../../../helpers';
 
 export const Footer = () => {
   return (
