@@ -1,4 +1,4 @@
-import { HomePage } from '../portfolio/pages';
+import { HomePage } from '../pages';
 
 export const AppRouter = [
   {
