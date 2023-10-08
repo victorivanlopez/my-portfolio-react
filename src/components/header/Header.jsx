@@ -6,14 +6,16 @@ import {
   MenuContainer,
   MenuPrimary,
   MenuSocialContainer,
-  LinkedinIcon,
-  GithubIcon,
+  // LinkedinIcon,
+  // GithubIcon,
   HamburguerButton,
   InfoContainer,
   MenuContainerMovil,
   MenuSocialContainerMovil
 } from './styles';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const navLinks = ['Inicio', 'Sobre Mi', 'Experiencia y Habilidades', 'Portafolio', 'Contacto'];
 
@@ -35,7 +37,7 @@ export const Header = () => {
           <HamburguerButton
             onClick={() => setIsOpen(!isOpen)}
           >
-            <RxHamburgerMenu size={35} cursor='pointer' />
+            <FontAwesomeIcon icon={faBars} size='2xl' />
           </HamburguerButton>
 
           <MenuContainer>
@@ -56,10 +58,10 @@ export const Header = () => {
 
           <MenuSocialContainer>
             <a href="https://mx.linkedin.com/" target="_blank">
-              <LinkedinIcon size={28} />
+              <FontAwesomeIcon icon={faLinkedin} size='xl' />
             </a>
             <a href="https://github.com/victorivanlopez" target="_blank">
-              <GithubIcon size={28} />
+              <FontAwesomeIcon icon={faGithub} size='xl' />
             </a>
           </MenuSocialContainer>
         </Navegation>
@@ -82,10 +84,10 @@ export const Header = () => {
 
         <MenuSocialContainerMovil>
           <a href="https://mx.linkedin.com/" target="_blank">
-            <LinkedinIcon size={28} />
+            <FontAwesomeIcon icon={faLinkedin} size='xl' />
           </a>
           <a href="https://github.com/victorivanlopez" target="_blank">
-            <GithubIcon size={28} />
+            <FontAwesomeIcon icon={faGithub} size='xl' />
           </a>
         </MenuSocialContainerMovil>
       </MenuContainerMovil>
