@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export const HeaderMain = styled.header`
 @media (min-width: 993px) {
@@ -119,6 +118,13 @@ export const MenuSocialContainer = styled.nav`
   @media (min-width: 993px) {
     display: flex;  
   }
+  svg {
+    color: var(--c-gray-dark);
+    transition: color .3s;
+    &:hover {
+    color: var(--c-primary);
+    }
+  }
 `;
 
 export const MenuSocialContainerMovil = styled(MenuSocialContainer)`
@@ -127,19 +133,3 @@ export const MenuSocialContainerMovil = styled(MenuSocialContainer)`
   margin-top: 1rem;
   border-top: 1px solid var(--c-gray-light);
 `
-
-export const LinkedinIcon = styled(AiFillLinkedin)`
-  color: var(--c-gray-dark);
-  transition: color .3s;
-  &:hover {
-    color: var(--c-primary);
-  }
-`;
-
-export const GithubIcon = styled(AiFillGithub)`
-  color: var(--c-gray-dark);
-  transition: color .3s;
-  &:hover {
-    color: var(--c-primary);
-  }
-`;
