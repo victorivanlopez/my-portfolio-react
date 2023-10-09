@@ -1,1 +1,1 @@
-# My Portfolio | React - React Router DOM - Strapi - PostgreSQL - Axios - Vite
+# My Portfolio | React - Styled Components - Strapi - PostgreSQL - Axios - Vite
