@@ -1,13 +1,10 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import {
   HeaderMain,
   Navegation,
   MenuContainer,
   MenuPrimary,
   MenuSocialContainer,
-  // LinkedinIcon,
-  // GithubIcon,
   HamburguerButton,
   InfoContainer,
   MenuContainerMovil,
@@ -45,11 +42,7 @@ export const Header = () => {
               {
                 navLinks.map(link => (
                   <li key={link}>
-                    <NavLink
-                      to="/"
-                    >
-                      {link}
-                    </NavLink>
+                    <a href="#">{link}</a>
                   </li>
                 ))
               }
@@ -72,11 +65,7 @@ export const Header = () => {
           {
             navLinks.map(link => (
               <li key={link}>
-                <NavLink
-                  to="/"
-                >
-                  {link}
-                </NavLink>
+                <a href="#">{link}</a>
               </li>
             ))
           }
