@@ -1,4 +1,6 @@
 import {
+  ButtonContainer,
+  ButtonPrimary,
   ResumeContainer,
   ResumeExperience,
   ResumeSkill,
@@ -78,6 +80,10 @@ export const ResumeSection = () => {
             )
         }
       </ResumeContainer>
+
+      <ButtonContainer>
+        <ButtonPrimary href="#">Descargar mi CV</ButtonPrimary>
+      </ButtonContainer>
     </section>
   )
 }
