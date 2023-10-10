@@ -9,7 +9,7 @@ export const HeroSection = () => {
         <p>Hola. Mi nombre es Víctor Iván López</p>
         <h1>Desarrollador Web <span>Front-end</span></h1>
 
-        <ButtonPrimaryHero href="#">Ver Portafolio</ButtonPrimaryHero>
+        <ButtonPrimaryHero href="#">Ver Proyectos</ButtonPrimaryHero>
       </HeroContent>
 
       <a href='#'>
