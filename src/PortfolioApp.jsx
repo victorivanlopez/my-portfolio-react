@@ -1,12 +1,12 @@
 import { PortfolioLayout } from './Layout/PortfolioLayout';
-import { HeroSection, AboutSection } from './components/sections';
+import { HeroSection, AboutSection, ResumeSection } from './components/sections';
 
 export const PortfolioApp = () => {
   return (
     <PortfolioLayout>
       <HeroSection />
-
       <AboutSection />
+      <ResumeSection />
     </PortfolioLayout>
   )
 }
