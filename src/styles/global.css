@@ -80,6 +80,10 @@ hr {
   border: 1px solid var(--c-gray-light);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* Utils */
 .container {
   width: min(90%, 105rem);
