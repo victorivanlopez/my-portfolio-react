@@ -12,7 +12,7 @@ export const AboutContent = styled.div`
 export const AboutInformation = styled.div`
 
   span {
-    color: var(--c-primary);
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   p {
@@ -32,7 +32,7 @@ export const AboutBiography = styled.div`
     
     li {
       padding: 1rem 0;
-      border-bottom: 1px solid var(--c-gray-light);
+      border-bottom: 1px solid ${({ theme }) => theme.colors.grayLight};
       &:last-of-type {
         border-bottom: 0;
       }

@@ -4,7 +4,7 @@ export const HeaderMain = styled.header`
 @media (min-width: 993px) {
   position: fixed;
   z-index: 1;
-  background-color: var(--c-white);
+  background-color: ${({ theme }) => theme.colors.white};
   width: 20rem;
   inset: 0 auto 0 0;
   overflow: hidden;
@@ -58,7 +58,7 @@ export const InfoContainer = styled.div`
 export const HamburguerButton = styled.button`
   display: block;
   margin-left: auto;
-  background-color: var(--c-white);
+  background-color: ${({ theme }) => theme.colors.white};
   border: none;
   @media (min-width: 993px) {
     display: none;
@@ -75,7 +75,7 @@ export const MenuContainer = styled.nav`
 export const MenuContainerMovil = styled(MenuContainer)`
   display: block;
   transition: opacity .4s ease-in-out, padding .4s ease-in-out, max-height .4s ease-in-out;
-  background-color: var(--c-white);
+  background-color: ${({ theme }) => theme.colors.white};
   opacity: 0;
   max-height: 0;
   padding: 0;
@@ -97,7 +97,7 @@ export const MenuPrimary = styled.ul`
       gap: 1.5rem;
       text-align: center;
   a {
-    color: var(--gris-oscuro);
+    color: ${({ theme }) => theme.colors.grayDark};
     text-transform: uppercase;
     font-size: 2rem;
     transition: color .3s;
@@ -105,7 +105,7 @@ export const MenuPrimary = styled.ul`
       font-size: 1.8rem;
     }
     &:hover {
-      color: var(--c-primary);
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;
@@ -119,10 +119,10 @@ export const MenuSocialContainer = styled.nav`
     display: flex;  
   }
   svg {
-    color: var(--c-gray-dark);
+    color: ${({ theme }) => theme.colors.grayDark};
     transition: color .3s;
     &:hover {
-    color: var(--c-primary);
+    color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;
@@ -131,5 +131,5 @@ export const MenuSocialContainerMovil = styled(MenuSocialContainer)`
   display: flex;
   padding-top: 2rem;
   margin-top: 1rem;
-  border-top: 1px solid var(--c-gray-light);
+  border-top: 1px solid ${({ theme }) => theme.colors.grayLight};
 `

@@ -8,7 +8,7 @@ export const ProjectsList = styled.div`
 `;
 
 export const ProjectItem = styled.div`
-  border: 1px solid var(--c-gray-light);
+  border: 1px solid ${({ theme }) => theme.colors.grayLight};
   border-radius: 2rem;
   border-top: 0;
   &:hover .img-project {
@@ -33,7 +33,7 @@ export const ProjectContent = styled.div`
 
   h3 {
     display: inline-block;
-    background-image: linear-gradient(to right, var(--c-primary) 0%, var(--c-primary) 100%);
+    background-image: linear-gradient(to right, ${({ theme }) => theme.colors.primary} 0%, ${({ theme }) => theme.colors.primary} 100%);
     background-size: 0px 0.2rem;
     background-position: 0px 95%;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ export const ProjectLinks = styled.div`
     color: var(--c-black);
     transition: color 0.3s;
     &:hover {
-      color: var(--c-primary);
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;
@@ -62,7 +62,7 @@ export const ProjectFooter = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border-top: 1px solid var(---c-gray-light);
+  border-top: 1px solid ${({ theme }) => theme.colors.grayLight};
   padding: 1.5rem;
 `;
 

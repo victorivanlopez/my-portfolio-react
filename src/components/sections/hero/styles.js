@@ -17,7 +17,7 @@ export const Hero = styled.section`
     display: none;
     @media (min-width: 768px) {
       display: block;
-      color: var(--c-primary);
+      color: ${({ theme }) => theme.colors.primary};
       font-size: 2.5rem;
       position: absolute;
       inset: auto 50% 0 50%;
@@ -28,7 +28,7 @@ export const Hero = styled.section`
 
 export const HeroContent = styled.div`
   padding: 3rem;
-  color: var(--c-white);
+  color: ${({ theme }) => theme.colors.white};
   @media (min-width: 768px) {
     max-width: 60rem;
     padding: 0;
@@ -40,7 +40,7 @@ export const HeroContent = styled.div`
       font-size: 6rem;
     }
     span {
-      color: var(--c-primary);
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
   p {
@@ -57,19 +57,12 @@ export const ButtonPrimary = styled.a`
   border-radius: 1rem;
   margin: 1rem 0;
   display: inline-block;
-  border: 2px solid var(--c-primary);
-  color: var(--c-primary);
-  background: linear-gradient(to left, var(--c-primary) 50%, transparent 50%) no-repeat left / 200%;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
+  background: linear-gradient(to left, ${({ theme }) => theme.colors.primary} 50%, transparent 50%) no-repeat left / 200%;
   transition: background-position .3s ease, color .3s ease;
   &:hover {
     background-position: right;
-    color: var(--c-primary);
+    color: ${({ theme }) => theme.colors.white};
   }
-`;
-
-export const ButtonPrimaryHero = styled(ButtonPrimary)`
-  margin: 2rem 0;
-  &:hover {
-      color: var(--c-white);
-    }
 `;
