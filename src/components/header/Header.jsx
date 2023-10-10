@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const navLinks = ['Inicio', 'Sobre Mi', 'Experiencia y Habilidades', 'Portafolio', 'Contacto'];
+const navLinks = ['Inicio', 'Sobre Mi', 'Experiencia y Habilidades', 'Proyectos', 'Contacto'];
 
 export const Header = () => {
 
