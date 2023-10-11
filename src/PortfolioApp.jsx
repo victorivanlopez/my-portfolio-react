@@ -1,5 +1,5 @@
 import { PortfolioLayout } from './Layout/PortfolioLayout';
-import { HeroSection, AboutSection, ResumeSection, ProjectsSection } from './components/sections';
+import { HeroSection, AboutSection, ResumeSection, ProjectsSection, ContactSection } from './components/sections';
 
 export const PortfolioApp = () => {
   return (
@@ -8,6 +8,7 @@ export const PortfolioApp = () => {
       <AboutSection />
       <ResumeSection />
       <ProjectsSection />
+      <ContactSection />
     </PortfolioLayout>
   )
 }
