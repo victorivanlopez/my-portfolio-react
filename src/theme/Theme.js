@@ -9,7 +9,7 @@ export const theme = {
     success: '#66A15A',
   },
   fonts: {
-    poppins: ['Poppins', 'sans-serif'],
-    lato: ['Lato', 'sans-serif'],
+    poppins: 'Poppins',
+    lato: 'Lato',
   },
 }

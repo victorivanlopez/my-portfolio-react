@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: ${({ theme }) => theme.fonts.poppins[0] || theme.fonts.poppins[1]};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     font-size: 1.6rem;
     line-height: 1.5;
   }
@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
   h1,
   h2,
   h3 {
-    font-family: ${({ theme }) => theme.fonts.lato[0] || theme.fonts.lato[1]};
+    font-family: ${({ theme }) => theme.fonts.lato};
     margin: 0 0 1.5rem 0;
     letter-spacing: .2rem;
     text-transform: uppercase;
