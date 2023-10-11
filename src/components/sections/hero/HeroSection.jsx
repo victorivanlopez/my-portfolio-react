@@ -4,15 +4,15 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export const HeroSection = () => {
   return (
-    <Hero>
+    <Hero id='home' className='observer'>
       <HeroContent>
         <p>Hola. Mi nombre es Víctor Iván López</p>
         <h1>Desarrollador Web <span>Front-end</span></h1>
 
-        <ButtonPrimary href="#">Ver Proyectos</ButtonPrimary>
+        <ButtonPrimary href="#projects">Ver Proyectos</ButtonPrimary>
       </HeroContent>
 
-      <a href='#'>
+      <a href='#about'>
         <FontAwesomeIcon icon={faArrowDown} bounce />
       </a>
     </Hero>

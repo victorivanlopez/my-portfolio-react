@@ -5,7 +5,7 @@ import { faEnvelope, faLocationDot, faMobileScreen } from '@fortawesome/free-sol
 
 export const ContactSection = () => {
   return (
-    <section className="section container">
+    <section id='contact' className="section container observer">
       <h2>Contacto</h2>
       <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -31,7 +31,7 @@ export const ContactSection = () => {
             </ContactFormField>
             <ContactFormField>
               <label htmlFor="message">Mensaje<span>*</span></label>
-              <textarea name="message" id="message" cols={40} rows={10}></textarea>
+              <textarea name="message" id="message" cols={40} rows={5}></textarea>
             </ContactFormField>
 
             <ContactFormButton type="submit" value="Enviar Mensaje" />

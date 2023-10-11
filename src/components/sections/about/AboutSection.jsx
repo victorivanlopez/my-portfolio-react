@@ -2,7 +2,7 @@ import { AboutBiography, AboutContent, AboutInformation } from './styles';
 
 export const AboutSection = () => {
   return (
-    <section className="container section">
+    <section id='about' className="container section observer">
       <h2>Sobre mi</h2>
       <p className='section-description'>Conoce un poco más sobre mi, habilidades y mi experiencia</p>
 

@@ -10,7 +10,7 @@ import {
 
 export const ProjectsSection = () => {
   return (
-    <main className="section container">
+    <main id='projects' className="section container observer">
       <h2>Proyectos</h2>
       <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 

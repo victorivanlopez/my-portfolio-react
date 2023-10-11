@@ -20,7 +20,7 @@ export const ResumeSection = () => {
   }
 
   return (
-    <section className="section container">
+    <section id='resume' className="section container observer">
       <h2>Experiencia y Habilidades</h2>
       <p className="section-description">La experiencia y habilidades que he adquirido desarrollando proyectos</p>
 
