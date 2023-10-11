@@ -39,6 +39,9 @@ export const ContactFormField = styled.div`
       border: 1px solid ${({ theme }) => theme.colors.grayDark};
     }
   }
+  textarea {
+    resize: vertical;
+  }
 `;
 
 export const ContactFormButton = styled.input`
