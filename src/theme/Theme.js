@@ -7,6 +7,7 @@ export const theme = {
     black: '#000000',
     white: '#ffffff',
     success: '#66A15A',
+    error: '#CF0B0B',
   },
   fonts: {
     poppins: 'Poppins',
