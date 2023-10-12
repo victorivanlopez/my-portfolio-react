@@ -84,7 +84,7 @@ export const MenuContainerMovil = styled(MenuContainer)`
     max-height: 40rem;
     padding: 2rem 0;
   `}
-  @media (min-width: 768px) {
+  @media (min-width: 993px) {
     display: none;
   }
 `;
