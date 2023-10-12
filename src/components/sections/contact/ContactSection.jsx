@@ -1,7 +1,7 @@
 import { ContactContainer, ContactFormButton, ContactFormContainer, ContactFormField, ContactMean, ContactMeanContent, ContactMeans, MenuSocialContainer } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLocationDot, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
+import { SocialIcons } from '../../../ui';
 
 export const ContactSection = () => {
   return (
@@ -73,12 +73,7 @@ export const ContactSection = () => {
           </ContactMeans>
           <h3>Redes Sociales</h3>
           <MenuSocialContainer>
-            <a href="https://mx.linkedin.com/" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} size='xl' />
-            </a>
-            <a href="https://github.com/victorivanlopez" target="_blank">
-              <FontAwesomeIcon icon={faGithub} size='xl' />
-            </a>
+            <SocialIcons />
           </MenuSocialContainer>
         </div>
       </ContactContainer>
