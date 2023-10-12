@@ -42,43 +42,6 @@ export const ResumeChild = styled.div`
   border-radius: 2rem;
 `;
 
-export const ResumeExperience = styled(ResumeChild)`
-  .dates {
-    margin-bottom: 1rem;
-    color: ${({ theme }) => theme.colors.primary};
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
-
-  .company {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-`;
-
-export const ResumeSkill = styled(ResumeChild)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  svg {
-    font-size: 6rem;
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
-  h3 {
-    margin: 0;
-  }
-`;
-
 export const ButtonContainer = styled.div`
   margin: 2rem 0 0 0;
   @media (min-width: 768px) {
