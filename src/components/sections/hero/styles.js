@@ -44,7 +44,9 @@ export const HeroContent = styled.div`
     }
   }
   p {
-    font-size: 1.8rem;
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
 `;
 
