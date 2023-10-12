@@ -22,6 +22,7 @@ export const ProjectItem = styled.div`
 export const ProjectImage = styled.div`
   overflow: hidden;
   img {
+    width: 100%;
     height: 25rem;
     object-fit: cover;
     transition: transform 0.4s ease-in-out;
