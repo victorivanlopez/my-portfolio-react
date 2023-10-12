@@ -9,11 +9,10 @@ import {
   MenuContainerMovil,
   MenuSocialContainerMovil
 } from './styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Navbar } from '../navbar';
 import { SocialIcons } from '../../ui';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const Header = () => {
 
@@ -37,6 +36,10 @@ export const Header = () => {
     });
 
     sections.forEach((section) => observer.observe(section));
+    
+    return () => {
+      observer.disconnect();
+    }
   }, [])
 
 
