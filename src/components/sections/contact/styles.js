@@ -58,7 +58,7 @@ export const ContactFormButton = styled.input`
   color: ${({ theme }) => theme.colors.primary};
   background: linear-gradient(to left, ${({ theme }) => theme.colors.primary} 50%, transparent 50%) no-repeat left / 200%;
   transition: background-position .3s ease, color .3s ease;
-  @media (min-width: 768px) {
+  @media (min-width: 993px) {
     width: 50%;
   }
   &:hover {
