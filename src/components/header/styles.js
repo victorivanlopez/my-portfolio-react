@@ -87,31 +87,6 @@ export const MenuContainerMovil = styled(MenuContainer)`
   @media (min-width: 768px) {
     display: none;
   }
-`
-
-export const MenuPrimary = styled.ul`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    text-align: center;
-  a {
-    color: ${({ theme }) => theme.colors.grayDark};
-    text-transform: uppercase;
-    font-size: 2rem;
-    transition: color .3s;
-    @media (min-width: 993px) {
-      font-size: 1.8rem;
-    }
-    &:hover {
-      color: ${({ theme }) => theme.colors.primary};
-    }
-  }
-
-  .active-link {
-    color: ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 export const MenuSocialContainer = styled.nav`
@@ -136,4 +111,4 @@ export const MenuSocialContainerMovil = styled(MenuSocialContainer)`
   padding-top: 2rem;
   margin-top: 1rem;
   border-top: 1px solid ${({ theme }) => theme.colors.grayLight};
-`
+`;

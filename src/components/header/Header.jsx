@@ -3,7 +3,6 @@ import {
   HeaderMain,
   Navegation,
   MenuContainer,
-  MenuPrimary,
   MenuSocialContainer,
   HamburguerButton,
   InfoContainer,
@@ -13,9 +12,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-const navLinks = ['Inicio', 'Sobre Mi', 'Experiencia y Habilidades', 'Proyectos', 'Contacto'];
-const navLinksId = ['home', 'about', 'resume', 'projects', 'contact'];
+import { Navbar } from '../navbar';
+import { SocialIcons } from '../../ui';
 
 export const Header = () => {
 
@@ -29,7 +27,6 @@ export const Header = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveLink(entry.target.id);
-          console.log(entry.target.id)
         };
       });
     };
@@ -61,49 +58,20 @@ export const Header = () => {
           </HamburguerButton>
 
           <MenuContainer>
-            <MenuPrimary>
-              {
-                navLinks.map((link, i) => (
-                  <li key={link}>
-                    <a 
-                      className={navLinksId[i] === activeLink ? 'active-link' : ''} 
-                      href={`#${navLinksId[i]}`}
-                    >{link}</a>
-                  </li>
-                ))
-              }
-            </MenuPrimary>
+            <Navbar activeLink={activeLink} />
           </MenuContainer>
 
           <MenuSocialContainer>
-            <a href="https://mx.linkedin.com/" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} size='xl' />
-            </a>
-            <a href="https://github.com/victorivanlopez" target="_blank">
-              <FontAwesomeIcon icon={faGithub} size='xl' />
-            </a>
+            <SocialIcons />
           </MenuSocialContainer>
         </Navegation>
       </HeaderMain>
 
       <MenuContainerMovil open={isOpen}>
-        <MenuPrimary>
-          {
-            navLinks.map(link => (
-              <li key={link}>
-                <a href="#">{link}</a>
-              </li>
-            ))
-          }
-        </MenuPrimary>
+        <Navbar activeLink={activeLink} />
 
         <MenuSocialContainerMovil>
-          <a href="https://mx.linkedin.com/" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} size='xl' />
-          </a>
-          <a href="https://github.com/victorivanlopez" target="_blank">
-            <FontAwesomeIcon icon={faGithub} size='xl' />
-          </a>
+          <SocialIcons />
         </MenuSocialContainerMovil>
       </MenuContainerMovil>
     </>
