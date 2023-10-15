@@ -1,4 +1,4 @@
-import { PortfolioLayout } from './Layout/PortfolioLayout';
+import { PortfolioLayout } from './layout/PortfolioLayout';
 import { HeroSection, AboutSection, ResumeSection, ProjectsSection, ContactSection } from './components/sections';
 
 export const PortfolioApp = () => {
