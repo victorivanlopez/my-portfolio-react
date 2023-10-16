@@ -8,35 +8,36 @@ import {
 } from './styles';
 
 
-export const ProjectItem = () => {
+export const ProjectItem = ({ project }) => {
+
+  const { title, repoURL, demoURL, cover, icons } = project;
+
+  const imageURL = cover.data.attributes.formats.small.url;
+
+  console.log(project)
   return (
     <ProjectCard>
       <ProjectImage>
-        <img className='img-project' src="/assets/projects/project2.png" alt="Imagen Proyecto" />
+        <img className='img-project' src={imageURL} alt="Imagen Proyecto" />
       </ProjectImage>
 
       <ProjectContent>
-        <h3>GuitarLA</h3>
+        <h3>{title}</h3>
         <ProjectLinks>
-          <a href="#">Ver demo</a>
-          <a href="#">Ver Repositorio</a>
+          <a href={demoURL} target='_blank'>Ver demo</a>
+          <a href={repoURL} target='_blank'>Ver Repositorio</a>
         </ProjectLinks>
       </ProjectContent>
 
       <ProjectFooter>
         <ProjectTechnologies>
-          <li>
-            <img src="/assets/projects/icon-nodejs.webp" alt="Icono Tecnología" />
-          </li>
-          <li>
-            <img src="/assets/projects/icon-express.webp" alt="Icono Tecnología" />
-          </li>
-          <li>
-            <img src="/assets/projects/icon-react.webp" alt="Icono Tecnología" />
-          </li>
-          <li>
-            <img src="/assets/projects/icon-mongodb.webp" alt="Icono Tecnología" />
-          </li>
+          {
+            icons.data.map(icon => (
+              <li key={icon.id}>
+                <img src={icon.attributes.url} alt={icon.attributes.name} />
+              </li>
+            ))
+          }
         </ProjectTechnologies>
       </ProjectFooter>
     </ProjectCard>
