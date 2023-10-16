@@ -23,7 +23,7 @@ export const ProjectImage = styled.div`
 `;
 
 export const ProjectContent = styled.div`
-  padding: 2rem;
+  padding: 2rem 3rem;
 
   h3 {
     display: inline-block;
@@ -43,7 +43,7 @@ export const ProjectLinks = styled.div`
   a {
     padding: 0;
     font-weight: 400;
-    color: var(--c-black);
+    color: ${({ theme }) => theme.colors.grayDark};
     transition: color 0.3s;
     &:hover {
       color: ${({ theme }) => theme.colors.primary};

@@ -14,7 +14,6 @@ export const ProjectItem = ({ project }) => {
 
   const imageURL = cover.data.attributes.formats.small.url;
 
-  console.log(project)
   return (
     <ProjectCard>
       <ProjectImage>
