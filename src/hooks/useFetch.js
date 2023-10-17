@@ -10,18 +10,28 @@ export const useFetch = (url) => {
 
   const getFetch = async () => {
     setState({
-      ...state,
-      isLoading: true
+      data: null,
+      isLoading: true,
+      hasError: null
     });
 
     try {
       const resp = await fetch(url);
-      const { data } = await resp.json();
-      setState({
-        data,
-        isLoading: false,
-        hasError: null,
-      });
+      if (resp.status === 404) {
+        setState({
+          data: null,
+          isLoading: false,
+          hasError: `Error ${resp.status}: Servidor no encontrado.`
+        });
+      }
+      if (resp.status === 200) {
+        const { data } = await resp.json();
+        setState({
+          data,
+          isLoading: false,
+          hasError: null,
+        });
+      }
     } catch (error) {
       setState({
         ...state,
