@@ -1,5 +1,6 @@
 import { useFetch } from '../../../hooks';
 import { Spinner } from '../../../ui/components';
+import { Alert } from '../../../ui/components/alert';
 import { ProjectsList } from './projectsList';
 
 export const ProjectsSection = () => {
@@ -11,13 +12,9 @@ export const ProjectsSection = () => {
       <h2>Proyectos</h2>
       <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      {(hasError) && <p>{hasError}</p>}
-
-      {
-        (isLoading)
-          ? <Spinner />
-          : <ProjectsList projects={projects} />
-      }
+      {(isLoading) && <Spinner />}
+      {(projects) && <ProjectsList projects={projects} />}
+      {(hasError) && <Alert message={hasError} type='error' />}
     </main>
   )
 }
