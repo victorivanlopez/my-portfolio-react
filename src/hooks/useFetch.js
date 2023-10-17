@@ -2,41 +2,32 @@ import { useEffect, useState } from 'react';
 
 export const useFetch = (url) => {
 
-  const [state, setState] = useState({
-    data: null,
-    isLoading: true,
-    hasError: null,
-  });
+  const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(null);
 
   const getFetch = async () => {
-    setState({
-      data: null,
-      isLoading: true,
-      hasError: null
-    });
+    setData(null);
+    setIsLoading(true);
+    setHasError(null);
 
     try {
       const resp = await fetch(url);
       if (resp.status === 404) {
-        setState({
-          data: null,
-          isLoading: false,
-          hasError: `Error ${resp.status}: Servidor no encontrado.`
-        });
+        setData(null);
+        setIsLoading(false);
+        setHasError(`Error ${resp.status}: Servidor no encontrado.`);
       }
       if (resp.status === 200) {
         const { data } = await resp.json();
-        setState({
-          data,
-          isLoading: false,
-          hasError: null,
-        });
+        setData(data);
+        setIsLoading(false);
+        setHasError(null);
       }
     } catch (error) {
-      setState({
-        ...state,
-        hasError: error
-      });
+      setData(null);
+      setIsLoading(false);
+      setHasError('Error en el servidor.');
     }
   };
 
@@ -45,6 +36,8 @@ export const useFetch = (url) => {
   }, [url]);
 
   return {
-    ...state
+    data,
+    isLoading,
+    hasError,
   };
 }
