@@ -1,7 +1,8 @@
-import { ContactContainer, ContactFormButton, ContactFormContainer, ContactFormField, ContactMean, ContactMeanContent, ContactMeans, MenuSocialContainer } from './styles';
+import { ContactContainer, ContactMean, ContactMeanContent, ContactMeans, MenuSocialContainer } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import { SocialIcons } from '../../../ui';
+import { Form } from './form';
 
 export const ContactSection = () => {
   return (
@@ -12,30 +13,8 @@ export const ContactSection = () => {
       <ContactContainer>
         <div>
           <h3>Enviame un mensaje</h3>
-          <ContactFormContainer>
-            <ContactFormField>
-              <label htmlFor="name">Nombre Completo<span>*</span></label>
-              <input id='name' type="text" />
-            </ContactFormField>
-            <ContactFormField>
-              <label htmlFor="tel">Teléfono</label>
-              <input id='tel' type="tel" />
-            </ContactFormField>
-            <ContactFormField>
-              <label htmlFor="email">Correo electrónico<span>*</span></label>
-              <input id='email' type="email" />
-            </ContactFormField>
-            <ContactFormField>
-              <label htmlFor="subject">Asunto<span>*</span></label>
-              <input id='subject' type="text" />
-            </ContactFormField>
-            <ContactFormField>
-              <label htmlFor="message">Mensaje<span>*</span></label>
-              <textarea name="message" id="message" cols={40} rows={5}></textarea>
-            </ContactFormField>
-
-            <ContactFormButton type="submit" value="Enviar Mensaje" />
-          </ContactFormContainer>
+          
+          <Form />
         </div>
 
         <div>
