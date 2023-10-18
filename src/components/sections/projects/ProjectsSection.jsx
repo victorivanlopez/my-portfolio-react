@@ -5,7 +5,7 @@ import { ProjectsList } from './projectsList';
 
 export const ProjectsSection = () => {
 
-  const { data: projects, isLoading, hasError } = useFetch('http://127.0.0.1:1337/api/projects?populate=*');
+  const { data: projects, isLoading, hasError } = useFetch(`${import.meta.env.VITE_API_URL}/projects?populate=*`);
 
   return (
     <main id='projects' className="section container observer">
