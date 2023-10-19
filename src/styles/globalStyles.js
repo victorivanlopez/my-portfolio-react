@@ -85,4 +85,8 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     margin-bottom: 5rem;
   }
+
+  .error {
+    color: ${({ theme }) => theme.colors.error};
+  }
 `;
