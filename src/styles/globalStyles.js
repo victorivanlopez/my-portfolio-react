@@ -13,10 +13,22 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: ${({ theme }) => theme.colors.primary} white;
+  }
+
   body {
     font-family: ${({ theme }) => theme.fonts.poppins};
     font-size: 1.6rem;
     line-height: 1.5;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: ${({ theme }) => theme.colors.primary};
+      border-radius: 20px;
+    }
   }
 
   h1,
@@ -97,5 +109,5 @@ export const GlobalStyles = createGlobalStyle`
   URL: https://xsgames.co/animatiss
   Twitter: @xsgames_
 ---------------------------------------------- */
-  .scale-up-top{animation:scale-up-top 0.5s; } @keyframes scale-up-top{0%{transform:scale(.5);transform-origin:center top}100%{transform:scale(1);transform-origin:center top}}
+  .scale-up-top{animation:scale-up-top 0.7s; } @keyframes scale-up-top{0%{transform:scale(.5);transform-origin:center top}100%{transform:scale(1);transform-origin:center top}}
 `;
