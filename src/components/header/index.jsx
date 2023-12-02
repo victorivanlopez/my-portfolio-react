@@ -36,7 +36,7 @@ export const Header = () => {
     });
 
     sections.forEach((section) => observer.observe(section));
-    
+
     return () => {
       observer.disconnect();
     }

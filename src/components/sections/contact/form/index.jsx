@@ -58,11 +58,11 @@ export const Form = () => {
         onResetForm();
       } else {
         setIsLoading(false);
-        setHasError('No se pudo enviar el correo');
+        setHasError('No se pudo enviar el correo.');
       }
     } catch (error) {
       setIsLoading(false);
-      setHasError('Error al enviar el correo');
+      setHasError('Error al enviar el correo.');
     }
   }
 
@@ -134,9 +134,9 @@ export const Form = () => {
         <ContactFormButton type="submit" value="Enviar Mensaje" />
       </ContactFormContainer>
 
-        {isLoading && <Spinner />}
-        {hasSuccess && <Alert message={hasSuccess} />}
-        {hasError && <Alert message={hasError} type='error' />}
+      {isLoading && <Spinner />}
+      {hasSuccess && <Alert message={hasSuccess} />}
+      {hasError && <Alert message={hasError} type='error' />}
     </>
   )
 }
