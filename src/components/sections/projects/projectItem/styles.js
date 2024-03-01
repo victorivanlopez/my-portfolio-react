@@ -36,13 +36,18 @@ export const ProjectContent = styled.div`
   }
 `;
 
+export const ProjectDescription = styled.p`
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+`;
+
 export const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-around;
 
   a {
     padding: 0;
-    font-weight: 400;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.grayDark};
     transition: color 0.3s;
     &:hover {
