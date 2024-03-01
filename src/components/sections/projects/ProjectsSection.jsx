@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
   return (
     <main id='projects' className="section container observer">
       <h2>Proyectos</h2>
-      <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p className="section-description">Mis proyectos más destacados realizados para clientes.</p>
 
       {(isLoading) && <Spinner />}
       {(projects) && <ProjectsList projects={projects} />}

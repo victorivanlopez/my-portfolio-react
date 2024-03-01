@@ -8,7 +8,7 @@ export const ContactSection = () => {
   return (
     <section id='contact' className="section container observer">
       <h2>Contacto</h2>
-      <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p className="section-description">Todas las vías disponibles para contactarme.</p>
 
       <ContactContainer>
         <div>

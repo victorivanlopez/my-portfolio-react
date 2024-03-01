@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <section id='about' className="container section observer">
       <h2>Sobre mi</h2>
-      <p className='section-description'>Conoce un poco más sobre mi, habilidades y mi experiencia</p>
+      <p className='section-description'>Visión detallada de quién soy y mi trayectoria profesional.</p>
 
       <AboutContent>
         <AboutInformation>
@@ -20,10 +20,10 @@ export const AboutSection = () => {
               <p><span>Nombre:</span> Víctor Iván López González</p>
             </li>
             <li>
-              <p><span>Puesto:</span> Desarrollador Front-end</p>
+              <p><span>Puesto:</span> Desarrollador Web</p>
             </li>
             <li>
-              <p><span>Edad:</span> 28 Años</p>
+              <p><span>Edad:</span> 29 Años</p>
             </li>
             <li>
               <p><span>País:</span> México</p>
