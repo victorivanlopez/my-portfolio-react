@@ -10,7 +10,7 @@ export const HeroSection = () => {
 
   useEffect(() => {
     const typed = new Typed(element.current, {
-      strings: ['Front-end'],
+      strings: ['Front-end', 'React', 'WordPress'],
       typeSpeed: 100,
       backSpeed: 30,
       backDelay: 3000,
