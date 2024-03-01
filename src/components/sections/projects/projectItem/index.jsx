@@ -1,6 +1,7 @@
 import {
   ProjectCard,
   ProjectContent,
+  ProjectDescription,
   ProjectFooter,
   ProjectImage,
   ProjectLinks,
@@ -10,7 +11,7 @@ import {
 
 export const ProjectItem = ({ project }) => {
 
-  const { title, repoURL, demoURL, cover, icons } = project;
+  const { title, repoURL, demoURL, cover, icons, description } = project;
 
   const imageURL = cover.data.attributes.formats.small.url;
 
@@ -22,6 +23,7 @@ export const ProjectItem = ({ project }) => {
 
       <ProjectContent>
         <h3>{title}</h3>
+        <ProjectDescription>{description}</ProjectDescription>
         <ProjectLinks>
           <a href={demoURL} target='_blank'>Ver demo</a>
           <a href={repoURL} target='_blank'>Ver Repositorio</a>
