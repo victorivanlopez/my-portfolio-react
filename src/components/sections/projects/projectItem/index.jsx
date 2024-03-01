@@ -26,7 +26,7 @@ export const ProjectItem = ({ project }) => {
         <ProjectDescription>{description}</ProjectDescription>
         <ProjectLinks>
           <a href={demoURL} target='_blank'>Ver demo</a>
-          <a href={repoURL} target='_blank'>Ver Repositorio</a>
+          <a href={repoURL} target='_blank'>Ver repositorio</a>
         </ProjectLinks>
       </ProjectContent>
 
