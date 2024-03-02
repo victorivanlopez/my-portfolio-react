@@ -26,7 +26,7 @@ export const HeroSection = () => {
     <Hero id='home' className='observer'>
       <HeroContent>
         <p>Hola. Mi nombre es Víctor Iván López</p>
-        <h1>Desarrollador Web <span ref={element}></span></h1>
+        <h1>Desarrollador Web | <span ref={element}></span></h1>
 
         <ButtonPrimary href="#projects">Ver Proyectos</ButtonPrimary>
       </HeroContent>
