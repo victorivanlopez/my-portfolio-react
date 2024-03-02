@@ -30,7 +30,7 @@ export const HeroContent = styled.div`
   padding: 3rem;
   color: ${({ theme }) => theme.colors.white};
   @media (min-width: 768px) {
-    max-width: 60rem;
+    max-width: 65rem;
     padding: 0;
   }
   h1 {
