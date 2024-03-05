@@ -52,6 +52,7 @@ export const Header = () => {
               <img src="/assets/me.png" alt="Mi fotografia" />
             </div>
             <p>Víctor Iván López</p>
+            <span>Desarrollador Web</span>
           </InfoContainer>
 
           <HamburguerButton
