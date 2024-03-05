@@ -28,12 +28,16 @@ export const Navegation = styled.div`
 `;
 
 export const InfoContainer = styled.div`
+  @media (min-width: 993px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .photo {
     display: none;
     @media (min-width: 993px) {
       display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
   img {
@@ -44,14 +48,16 @@ export const InfoContainer = styled.div`
   p {
     font-size: 2.2rem;
     font-weight: 700;
-    text-align: center;
-    color: #575655;
     text-transform: uppercase;
     @media (min-width: 993px) {
       margin-top: 1rem;
       font-size: 1.6rem;
-      font-weight: 400;
+      font-weight: 600;
     }
+  }
+  span {
+    color: #575655;
+    font-size: 1.4rem;
   }
 `;
 
