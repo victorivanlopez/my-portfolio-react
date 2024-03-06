@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Tabs = styled.div`
   display: flex;
@@ -33,6 +33,12 @@ export const ResumeContainer = styled.div`
   gap: 3rem;
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    ${(props) => (props.$current === 'experience') && css`
+      grid-template-columns: repeat(2, 1fr);
+    `}
   }
 `;
 
