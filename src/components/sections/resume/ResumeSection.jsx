@@ -41,7 +41,7 @@ export const ResumeSection = () => {
         </TabsButtons>
       </Tabs>
 
-      <ResumeContainer>
+      <ResumeContainer $current={currentTab}>
         {
           (currentTab === 'experience')
             ? <ExperiencesList />
