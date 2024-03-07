@@ -30,6 +30,9 @@ export const ResumeContainer = styled.div`
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  ${(props) => (props.$current === 'experience') && css`
+      grid-template-columns: repeat(1, 1fr);
+  `}
   gap: 2rem;
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
