@@ -7,7 +7,7 @@ import {
   TabsButtons
 } from './styles';
 import { ExperiencesList } from './experiences';
-import { SkillsList } from './skills';
+import { Skills } from './skills';
 
 export const ResumeSection = () => {
 
@@ -45,7 +45,7 @@ export const ResumeSection = () => {
         {
           (currentTab === 'experience')
             ? <ExperiencesList />
-            : <SkillsList />
+            : <Skills />
         }
       </ResumeContainer>
 
