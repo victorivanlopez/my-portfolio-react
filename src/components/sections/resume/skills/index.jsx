@@ -1,27 +1,20 @@
-import { ResumeSkill } from './styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFigma, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faCodeBranch, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { useFetch } from '../../../../hooks';
+import { Alert, Spinner } from '../../../../ui/components';
+import { SkillsList } from './skills-list';
 
-export const SkillsList = () => {
+export const Skills = () => {
+  const {
+    data: skills,
+    isLoading,
+    hasError
+  } = useFetch(`${import.meta.env.VITE_API_URL}/skills?populate=*`);
+
   return (
     <>
-      <ResumeSkill className='scale-up-top'>
-        <FontAwesomeIcon icon={faFigma} />
-        <h3>Maquetación y Diseño</h3>
-      </ResumeSkill>
-      <ResumeSkill className='scale-up-top'>
-        <FontAwesomeIcon icon={faReact} />
-        <h3>Desarrollo con React</h3>
-      </ResumeSkill>
-      <ResumeSkill className='scale-up-top'>
-        <FontAwesomeIcon icon={faDatabase} />
-        <h3>Manejo de bases de datos</h3>
-      </ResumeSkill>
-      <ResumeSkill className='scale-up-top'>
-        <FontAwesomeIcon icon={faCodeBranch} />
-        <h3>Uso de Git y GitHub</h3>
-      </ResumeSkill>
+      {(isLoading) && <Spinner />}
+
+      {(skills) && <SkillsList skills={skills} />}
+      {(hasError) && <Alert message={hasError} type='error' />}
     </>
   )
 }
