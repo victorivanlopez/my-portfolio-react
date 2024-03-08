@@ -7,7 +7,7 @@ export const Skills = () => {
     data: skills,
     isLoading,
     hasError
-  } = useFetch(`${import.meta.env.VITE_API_URL}/skills?populate=*`);
+  } = useFetch(`${import.meta.env.VITE_API_URL}/skills?populate=*`, 'skills');
 
   return (
     <>
