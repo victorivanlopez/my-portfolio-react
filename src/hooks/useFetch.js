@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react';
 
-export const useFetch = (url) => {
+export const useFetch = (url, nameLS) => {
 
-  const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(() => {
+    if (nameLS) {
+      return JSON.parse(localStorage.getItem(nameLS)) ?? null;
+    } else {
+      return null;
+    }
+  });
+  const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(null);
 
   const getFetch = async () => {
@@ -23,6 +29,10 @@ export const useFetch = (url) => {
         setData(data);
         setIsLoading(false);
         setHasError(null);
+        setIsRealoaded(true);
+        if (nameLS) {
+          localStorage.setItem(nameLS, JSON.stringify(data) ?? null);
+        }
       }
     } catch (error) {
       setData(null);
@@ -32,8 +42,10 @@ export const useFetch = (url) => {
   };
 
   useEffect(() => {
-    getFetch();
-  }, [url]);
+    if (data === null) {
+      getFetch();
+    }
+  }, [url, nameLS]);
 
   return {
     data,
