@@ -1,13 +1,10 @@
-import { useFetch } from '../../../../hooks';
 import { Alert, Spinner } from '../../../../ui/components';
 import { SkillsList } from './skills-list';
+import { usePortfolioContext } from '../../../../hooks';
 
 export const Skills = () => {
-  const {
-    data: skills,
-    isLoading,
-    hasError
-  } = useFetch(`${import.meta.env.VITE_API_URL}/skills?populate=*`, 'skills');
+
+  const { skills, isLoading, hasError } = usePortfolioContext();
 
   return (
     <>
