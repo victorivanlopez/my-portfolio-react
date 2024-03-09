@@ -43,9 +43,16 @@ export const ResumeContainer = styled.div`
 `;
 
 export const ResumeChild = styled.div`
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 2rem;
+  transition: background-color .3s ease;
+  @media (min-width: 768px) {
+    padding: 4rem;
+  }
+  &:hover {
+    background-color: ${({theme}) => theme.colors.grayLight};
+  }
 `;
 
 export const ButtonContainer = styled.div`

@@ -16,7 +16,7 @@ export const ResumeSkill = styled(ResumeChild)`
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0;
     text-align: center;
     @media (min-width: 768px) {
