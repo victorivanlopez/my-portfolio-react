@@ -1,11 +1,11 @@
-import { useFetch } from '../../../hooks';
 import { Spinner } from '../../../ui/components';
 import { Alert } from '../../../ui/components/alert';
 import { ProjectsList } from './projectsList';
+import { usePortfolioContext } from '../../../hooks';
 
 export const ProjectsSection = () => {
 
-  const { data: projects, isLoading, hasError } = useFetch(`${import.meta.env.VITE_API_URL}/projects?populate=*`);
+  const { projects, isLoading, hasError } = usePortfolioContext();
 
   return (
     <main id='projects' className="section container observer">
