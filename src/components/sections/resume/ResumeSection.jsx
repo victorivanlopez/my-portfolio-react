@@ -6,7 +6,7 @@ import {
   Tabs,
   TabsButtons
 } from './styles';
-import { ExperiencesList } from './experiences';
+import { Experiences } from './experiences';
 import { Skills } from './skills';
 
 export const ResumeSection = () => {
@@ -44,7 +44,7 @@ export const ResumeSection = () => {
       <ResumeContainer $current={currentTab}>
         {
           (currentTab === 'experience')
-            ? <ExperiencesList />
+            ? <Experiences />
             : <Skills />
         }
       </ResumeContainer>
