@@ -11,6 +11,11 @@ export const ResumeExperience = styled(ResumeChild)`
   h3 {
     margin-bottom: 1rem;
   }
+  ul {
+    list-style: disc;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 `;
 
 export const ResumeExperienceHeader = styled.div`
