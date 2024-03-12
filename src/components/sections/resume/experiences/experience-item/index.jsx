@@ -1,15 +1,19 @@
 import { ResumeExperience, ResumeExperienceHeader } from './styles';
+import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 
 export const ExperienceItem = ({ experience }) => {
+
+  const { date, place, title, company, description } = experience;
+
   return (
     <ResumeExperience className='scale-up-top'>
       <ResumeExperienceHeader>
-        <p>{experience.date}</p>
-        <p>{experience.place}</p>
+        <p>{date}</p>
+        <p>{place}</p>
       </ResumeExperienceHeader>
-      <h3>{experience.title}</h3>
-      <p className="company">{experience.company}</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis autem minima velit quibusdam vero.</p>
+      <h3>{title}</h3>
+      <p className="company">{company}</p>
+      <BlocksRenderer content={description} />
     </ResumeExperience>
   )
 }
