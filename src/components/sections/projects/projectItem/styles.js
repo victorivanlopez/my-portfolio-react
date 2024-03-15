@@ -39,9 +39,9 @@ export const ProjectContent = styled.div`
 
 export const ProjectDescription = styled.div`
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   ul {
     list-style: disc;
+    padding: 0 1rem 1.5rem 1rem;
   }
 `;
 
