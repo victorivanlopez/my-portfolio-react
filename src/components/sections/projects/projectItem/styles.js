@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const ProjectCard = styled.div`
-  border: 1px solid ${({ theme }) => theme.colors.grayLight};
   border-radius: 2rem;
   border-top: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   &:hover .img-project {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   &:hover h3 {
     background-size: 100% 0.2rem;
@@ -17,13 +17,13 @@ export const ProjectImage = styled.div`
   img {
     width: 100%;
     height: 25rem;
-    object-fit: cover;
+    /* object-fit: cover; */
     transition: transform 0.4s ease-in-out;
   }
 `;
 
 export const ProjectContent = styled.div`
-  padding: 2rem 3rem;
+  padding: 2.5rem 3rem;
 
   h3 {
     display: inline-block;
