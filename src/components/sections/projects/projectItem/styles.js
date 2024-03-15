@@ -32,13 +32,17 @@ export const ProjectContent = styled.div`
     background-position: 0px 95%;
     background-repeat: no-repeat;
     padding: 0.4rem 0;
+    margin-bottom: 1rem;
     transition: background-size 0.3s;
   }
 `;
 
-export const ProjectDescription = styled.p`
-  font-size: 1.4rem;
+export const ProjectDescription = styled.div`
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  ul {
+    list-style: disc;
+  }
 `;
 
 export const ProjectLinks = styled.div`
@@ -47,6 +51,7 @@ export const ProjectLinks = styled.div`
 
   a {
     padding: 0;
+    text-decoration: underline;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.grayDark};
     transition: color 0.3s;
