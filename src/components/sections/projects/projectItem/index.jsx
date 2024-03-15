@@ -7,6 +7,7 @@ import {
   ProjectLinks,
   ProjectTechnologies
 } from './styles';
+import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 
 
 export const ProjectItem = ({ project }) => {
@@ -23,10 +24,14 @@ export const ProjectItem = ({ project }) => {
 
       <ProjectContent>
         <h3>{title}</h3>
-        <ProjectDescription>{description}</ProjectDescription>
+        <ProjectDescription>
+          <BlocksRenderer content={description} />
+        </ProjectDescription>
         <ProjectLinks>
-          <a href={demoURL} target='_blank'>Ver demo</a>
-          <a href={repoURL} target='_blank'>Ver repositorio</a>
+          <a href={demoURL} target='_blank'>Ver sitio</a>
+          {
+            (repoURL) && <a href={repoURL} target='_blank'>Ver repositorio</a>
+          }
         </ProjectLinks>
       </ProjectContent>
 
