@@ -9,8 +9,9 @@ export const AboutSection = () => {
       <AboutContent>
         <AboutInformation>
           <h3>Hola. Soy <span>Víctor Iván López</span></h3>
-          <p>Me gradué de la carrera de Ingeniería en Telemática en la Universidad de Colima en el año 2017. Al inicio de mi carrera laboral, me dediqué a temas relacionados con la tecnología, las redes y la comunicación de datos. Siempre he sentido una gran pasión por la programación web, y he fortalecido mis conocimientos de manera autodidacta en programación y diseño web.</p>
-          <p>Actualmente, disfruto trabajar en el desarrollo de páginas web para emprendedores que buscan mejorar su negocio y ofrecer sus servicios o productos de manera más profesional a sus clientes.</p>
+          <p>Destaco en el trato con clientes, desarrollando sitios web a medida utilizando principalmente WordPress como CMS para facilitar la gestión del contenido, lo que me ha permitido comprender a fondo las necesidades del cliente y ofrecer soluciones efectivas y creativas para sus negocios.</p>
+          <p>También cuento con sólida experiencia en el desarrollo de aplicaciones web utilizando tecnologías modernas del lado del Front-end como React y Typescript.</p>
+          <p>Motivado por el aprendizaje continuo y la mejora constante, estoy ansioso por contribuir al desarrollo de proyectos desafiantes y significativos.</p>
         </AboutInformation>
 
         <AboutBiography>
