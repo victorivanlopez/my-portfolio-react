@@ -1,11 +1,11 @@
 import { PortfolioProvider } from './context';
-import { PortfolioLayout } from './layout/PortfolioLayout';
-import { 
-  HeroSection, 
-  AboutSection, 
-  ResumeSection, 
-  ProjectsSection, 
-  ContactSection 
+import { PortfolioLayout } from './layout';
+import {
+  HeroSection,
+  AboutSection,
+  ResumeSection,
+  ProjectsSection,
+  ContactSection
 } from './components/sections';
 
 export const PortfolioApp = () => {
