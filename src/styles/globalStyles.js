@@ -109,5 +109,5 @@ export const GlobalStyles = createGlobalStyle`
   URL: https://xsgames.co/animatiss
   Twitter: @xsgames_
 ---------------------------------------------- */
-  .scale-up-top{animation:scale-up-top 0.7s; } @keyframes scale-up-top{0%{transform:scale(.5);transform-origin:center top}100%{transform:scale(1);transform-origin:center top}}
+  .scale-up-top{animation:scale-up-top 0.6s; } @keyframes scale-up-top{0%{transform:scale(.5);transform-origin:center top}100%{transform:scale(1);transform-origin:center top}}
 `;

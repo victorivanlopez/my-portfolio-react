@@ -16,9 +16,12 @@ export const ProjectImage = styled.div`
   overflow: hidden;
   img {
     width: 100%;
-    height: 25rem;
-    /* object-fit: cover; */
+    height: 30rem;
+    object-fit: cover;
     transition: transform 0.4s ease-in-out;
+    @media (min-width: 1300px) {
+      height: 25rem;
+    }
   }
 `;
 
