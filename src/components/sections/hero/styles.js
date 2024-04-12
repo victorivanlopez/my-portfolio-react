@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Hero = styled.section`
-  min-height: 65rem;
-  background-image: linear-gradient( rgb(0 0 0 / .75), rgb(0 0 0 / .75) ), url(/assets/hero.jpg);
+  min-height: 60rem;
+  background-image: linear-gradient( rgb(0 0 0 / .8), rgb(0 0 0 / .8) ), url(/assets/hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,14 +14,14 @@ export const Hero = styled.section`
     justify-content: center;
   }
   svg {
-    display: none;
-    @media (min-width: 768px) {
-      display: block;
-      color: ${({ theme }) => theme.colors.primary};
-      font-size: 2.5rem;
-      position: absolute;
-      inset: auto 50% 0 50%;
-      padding-bottom: 1.5rem;
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 2rem;
+    position: absolute;
+    inset: auto 50% 0 50%;
+    padding-bottom: 4rem;
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+      padding-bottom: 2rem;
     }
   }
 `;
