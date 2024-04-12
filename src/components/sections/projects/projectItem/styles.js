@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const ProjectCard = styled.div`
   border-radius: 2rem;
   border-top: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   &:hover .img-project {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   &:hover h3 {
     background-size: 100% 0.2rem;

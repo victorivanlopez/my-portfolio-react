@@ -4,7 +4,7 @@ export const Tabs = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 `;
 
 export const TabsButtons = styled.button`
@@ -44,7 +44,7 @@ export const ResumeContainer = styled.div`
 
 export const ResumeChild = styled.div`
   padding: 4rem 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 2rem;
   transition: background-color .3s ease;
   @media (min-width: 768px) {
