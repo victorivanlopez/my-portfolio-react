@@ -14,12 +14,12 @@ export const Hero = styled.section`
     justify-content: center;
   }
   svg {
-    color: ${({ theme }) => theme.colors.primary};
-    font-size: 2rem;
-    position: absolute;
-    inset: auto 50% 0 50%;
-    padding-bottom: 4rem;
+    display: none;
     @media (min-width: 1024px) {
+      display: block;
+      color: ${({ theme }) => theme.colors.primary};
+      position: absolute;
+      inset: auto 50% 0 50%;
       font-size: 3rem;
       padding-bottom: 2rem;
     }
