@@ -25,8 +25,8 @@ export const ContactSection = () => {
                 <FontAwesomeIcon icon={faMobileScreen} size='lg' />
               </div>
               <ContactMeanContent>
-                <p className='mean-title'>Telefono</p>
-                <a href="tel:+3143767156">3143767156</a>
+                <p className='mean-title'>Teléfono</p>
+                <a href="tel:+3143767156">+52 3143767156</a>
               </ContactMeanContent>
             </ContactMean>
 
@@ -36,7 +36,7 @@ export const ContactSection = () => {
               </div>
               <ContactMeanContent>
                 <p className='mean-title'>Email</p>
-                <a href="mailto:victor_ivan2211@hotmail.com">info@victorivanlopez.com</a>
+                <a href="mailto:victor_ivan2211@hotmail.com">vlopez@victorivanlopez.com</a>
               </ContactMeanContent>
             </ContactMean>
 
