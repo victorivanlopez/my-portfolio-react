@@ -36,7 +36,7 @@ export const ContactSection = () => {
               </div>
               <ContactMeanContent>
                 <p className='mean-title'>Email</p>
-                <a href="mailto:victor_ivan2211@hotmail.com">vlopez@victorivanlopez.com</a>
+                <a href="mailto:vlopez@victorivanlopez.com">vlopez@victorivanlopez.com</a>
               </ContactMeanContent>
             </ContactMean>
 
