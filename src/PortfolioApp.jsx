@@ -1,5 +1,5 @@
 import { PortfolioProvider } from './context';
-import { PortfolioLayout } from './layout';
+import { PortfolioLayout } from './layout/portfolio';
 import {
   HeroSection,
   AboutSection,
