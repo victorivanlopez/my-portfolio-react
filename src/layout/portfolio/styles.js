@@ -9,4 +9,5 @@ export const MainContent = styled.div`
 export const MainContainer = styled.div`
   overflow: auto;
   height: 100vh;
+  scroll-behavior: smooth;
 `;

@@ -4,7 +4,9 @@ export const ProjectCard = styled.div`
   border-radius: 2rem;
   border-top: 0;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  cursor: pointer;
+  @media (min-width: 768px) {
+    cursor: pointer;
+  }
   &:hover .img-project {
     transform: scale(1.1);
   }
