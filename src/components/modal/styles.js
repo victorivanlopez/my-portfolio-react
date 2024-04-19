@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerModal = styled.div`
   position: absolute;
+  min-height: 100vh;
   z-index: 1;
   background-color: rgb(33 37 41 / 0.95);
   inset: 0;

@@ -33,7 +33,7 @@ export const ResumeContainer = styled.div`
   ${(props) => (props.$current === 'experience') && css`
       grid-template-columns: repeat(1, 1fr);
   `}
-  gap: 3rem;
+  gap: 2rem;
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
     ${(props) => (props.$current === 'experience') && css`

@@ -8,7 +8,7 @@ export const ProjectCard = styled.div`
     cursor: pointer;
   }
   &:hover .img-project {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   &:hover h3 {
     background-size: 100% 0.2rem;
@@ -19,17 +19,16 @@ export const ProjectImage = styled.div`
   overflow: hidden;
   img {
     width: 100%;
-    height: 30rem;
     object-fit: cover;
     transition: transform 0.4s ease-in-out;
     @media (min-width: 1300px) {
-      height: 25rem;
+      
     }
   }
 `;
 
 export const ProjectContent = styled.div`
-  padding: 2.5rem 3rem;
+  padding: 2rem;
 
   h3 {
     display: inline-block;
