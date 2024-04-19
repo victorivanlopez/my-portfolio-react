@@ -13,6 +13,12 @@ export const PortfolioProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(null);
 
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  useEffect(() => {
+    startFetchingData();
+  }, [])
+
   const startFetchingData = async () => {
     setProjects(null);
     setSkills(null);
@@ -62,9 +68,13 @@ export const PortfolioProvider = ({ children }) => {
     }
   }
 
-  useEffect(() => {
-    startFetchingData();
-  }, [])
+  const showModal = () => {
+    setIsModalVisible(true);
+  }
+
+  const hiddenModal = () => {
+    setIsModalVisible(false);
+  }
 
   return (
     <PortfolioContext.Provider
@@ -74,6 +84,9 @@ export const PortfolioProvider = ({ children }) => {
         isLoading,
         hasError,
         experiences,
+        isModalVisible,
+        showModal,
+        hiddenModal,
       }}
     >
       {children}
