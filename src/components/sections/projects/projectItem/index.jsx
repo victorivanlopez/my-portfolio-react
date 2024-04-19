@@ -1,3 +1,4 @@
+import { usePortfolioContext } from '../../../../hooks';
 import {
   ProjectCard,
   ProjectContent,
@@ -12,12 +13,16 @@ import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 
 export const ProjectItem = ({ project }) => {
 
+  const { showModal } = usePortfolioContext();
+
   const { title, repoURL, demoURL, cover, icons, description } = project;
 
   const imageURL = cover.data.attributes.formats.small.url;
 
   return (
-    <ProjectCard>
+    <ProjectCard
+      onClick={showModal}
+    >
       <ProjectImage>
         <img className='img-project' src={imageURL} alt="Imagen Proyecto" />
       </ProjectImage>
