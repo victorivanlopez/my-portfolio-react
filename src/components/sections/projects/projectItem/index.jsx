@@ -29,14 +29,15 @@ export const ProjectItem = ({ project }) => {
 
       <ProjectContent>
         <h3>{title}</h3>
-        <ProjectDescription>
+        {/* <ProjectDescription>
           <BlocksRenderer content={description} />
-        </ProjectDescription>
+        </ProjectDescription> */}
         <ProjectLinks>
-          <a href={demoURL} target='_blank'>Ver sitio</a>
-          {
+          {/* <a href={demoURL} target='_blank'>Ver sitio</a> */}
+          <a href={demoURL} target='_blank'>Ver detalles</a>
+          {/* {
             (repoURL) && <a href={repoURL} target='_blank'>Ver repositorio</a>
-          }
+          } */}
         </ProjectLinks>
       </ProjectContent>
 
