@@ -11,15 +11,20 @@ import {
 
 export const ProjectItem = ({ project }) => {
 
-  const { showModal } = usePortfolioContext();
+  const { showModal, getProject } = usePortfolioContext();
 
-  const { title, cover, technologies } = project;
+  const { title, cover, technologies } = project.attributes;
 
   const imageURL = cover.data.attributes.formats.small.url;
 
+  const onClickProject = async () => {
+    showModal();
+    await getProject(project.id);
+  }
+
   return (
     <ProjectCard
-      onClick={showModal}
+      onClick={onClickProject}
     >
       <ProjectImage>
         <img className='img-project' src={imageURL} alt="Imagen Proyecto" />
@@ -30,7 +35,7 @@ export const ProjectItem = ({ project }) => {
         <ProjectButton>
           <button
             type='button'
-            onClick={showModal}
+            onClick={onClickProject}
           >
             Más detalles
           </button>
