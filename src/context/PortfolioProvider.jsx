@@ -10,6 +10,7 @@ export const PortfolioProvider = ({ children }) => {
   const [projects, setProjects] = useState(null);
   const [skills, setSkills] = useState(null);
   const [experiences, setExperiences] = useState(null);
+  const [project, setProject] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(null);
 
@@ -68,6 +69,21 @@ export const PortfolioProvider = ({ children }) => {
     }
   }
 
+  const getProject = async (projectId) => {
+    const url = `${import.meta.env.VITE_API_URL}/projects/${projectId}?populate=*`;
+    setIsLoading(true);
+    setHasError(null);
+    try {
+      const response = await fetch(url);
+      const { data } = await response.json();
+      setProject(data);
+      setIsLoading(false);
+      setHasError(null);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const showModal = () => {
     setIsModalVisible(true);
   }
@@ -84,6 +100,8 @@ export const PortfolioProvider = ({ children }) => {
         isLoading,
         hasError,
         experiences,
+        project,
+        getProject,
         isModalVisible,
         showModal,
         hiddenModal,
