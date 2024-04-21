@@ -50,12 +50,14 @@ export const ProjectDescription = styled.div`
   }
 `;
 
-export const ProjectLinks = styled.div`
+export const ProjectButton = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
-  a {
+  button {
     padding: 0;
+    background-color: transparent;
+    border: none;
     text-decoration: underline;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.grayDark};
