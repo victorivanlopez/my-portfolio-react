@@ -8,7 +8,7 @@ export const ProjectsList = ({ projects }) => {
         (projects.length < 1)
           ? <p>Aún no hay proyectos.</p>
           : projects?.map(project => (
-            <ProjectItem key={project.id} project={project.attributes} />
+            <ProjectItem key={project.id} project={project} />
           ))
       }
     </Projects>
