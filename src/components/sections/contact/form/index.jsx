@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { ContactFormButton, ContactFormContainer, ContactFormField } from './styles';
 
 import { useForm } from '../../../../hooks/useForm';
-import { Alert } from '../../../../ui/components/alert';
-import { Spinner } from '../../../ui';
+import { Spinner, Alert } from '../../../ui';
 
 const formValidations = {
   name: [(value) => value.length >= 1, 'El nombre es obligatorio'],

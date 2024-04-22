@@ -1,4 +1,3 @@
-import React from 'react';
 import { AlertContainer } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
