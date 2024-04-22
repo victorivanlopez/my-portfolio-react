@@ -1,8 +1,8 @@
 import { ContactContainer, ContactMean, ContactMeanContent, ContactMeans, MenuSocialContainer } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
-import { SocialIcons } from '../../../ui';
 import { Form } from './form';
+import { SocialIcons } from '../../ui';
 
 export const ContactSection = () => {
   return (
