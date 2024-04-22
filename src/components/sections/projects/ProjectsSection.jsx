@@ -1,7 +1,7 @@
-import { Spinner } from '../../../ui/components';
 import { Alert } from '../../../ui/components/alert';
 import { ProjectsList } from './projectsList';
 import { usePortfolioContext } from '../../../hooks';
+import { Spinner } from '../../ui';
 
 export const ProjectsSection = () => {
 

@@ -8,7 +8,7 @@ import {
   GridProject,
   LinksProject
 } from './styles';
-import { Spinner } from '../../ui/components';
+import { Spinner } from '../ui';
 
 export const ProjectContent = () => {
   const { project, isLoading } = usePortfolioContext();

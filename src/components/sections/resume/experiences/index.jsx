@@ -1,5 +1,6 @@
 import { usePortfolioContext } from '../../../../hooks';
-import { Alert, Spinner } from '../../../../ui/components';
+import { Alert } from '../../../../ui/components';
+import { Spinner } from '../../../ui';
 import { ExperiencesList } from './experiences-list';
 
 export const Experiences = () => {

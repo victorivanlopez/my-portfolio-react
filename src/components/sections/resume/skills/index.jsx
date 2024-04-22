@@ -1,6 +1,7 @@
-import { Alert, Spinner } from '../../../../ui/components';
+import { Alert } from '../../../../ui/components';
 import { SkillsList } from './skills-list';
 import { usePortfolioContext } from '../../../../hooks';
+import { Spinner } from '../../../ui';
 
 export const Skills = () => {
 
