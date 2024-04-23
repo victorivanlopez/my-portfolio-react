@@ -1,12 +1,10 @@
 import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 import { usePortfolioContext } from '../../hooks';
 import {
-  ContainerProject,
   ContentProject,
   DescriptionProject,
   DetailsProject,
   GridProject,
-  LinksProject
 } from './styles';
 import { Spinner } from '../ui';
 
@@ -18,9 +16,11 @@ export const ProjectContent = () => {
   const { title, description, client, repoURL, siteURL, cover } = project?.attributes;
 
   const imageURL = cover.data.attributes.formats.small.url;
+  const siteURLText = siteURL?.split('//')[1];
+  const repoURLText = repoURL?.split('https://github.com/')[1];
 
   return (
-    <ContainerProject>
+    <>
       <h2>{title}</h2>
 
       <GridProject>
@@ -31,24 +31,26 @@ export const ProjectContent = () => {
           <DescriptionProject>
             <BlocksRenderer content={description} />
           </DescriptionProject>
-          <h3>Detalles adicionales</h3>
+          <h3>Información adicional</h3>
           <DetailsProject>
             <li>
               <p><span>Cliente:</span> {client}</p>
             </li>
-            {/* <li>
-              <p><span>Técnologías:</span> Desarrollador Web</p>
-            </li> */}
-          </DetailsProject>
-          <h3>Enlaces</h3>
-          <LinksProject>
-            <a href={siteURL} target='_blank'>Ver sitio</a>
+            <li>
+              <p><span>URL:</span> <a href={siteURL} target='_blank'>{siteURLText}</a></p>
+            </li>
             {
-              (repoURL) && <a href={repoURL} target='_blank'>Repositiorio en Github</a>
+              (repoURL) && (
+                <>
+                  <li>
+                    <p><span>Repositorio:</span> <a href={repoURL} target='_blank'>{repoURLText}</a></p>
+                  </li>
+                </>
+              )
             }
-          </LinksProject>
+          </DetailsProject>
         </ContentProject>
       </GridProject>
-    </ContainerProject>
+    </>
   )
 }
