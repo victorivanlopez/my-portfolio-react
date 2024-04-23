@@ -1,12 +1,12 @@
+import { usePortfolioContext } from '../../../../hooks';
 import { BlocksRenderer } from '@strapi/blocks-react-renderer';
-import { usePortfolioContext } from '../../hooks';
 import {
   ContentProject,
   DescriptionProject,
   DetailsProject,
   GridProject,
 } from './styles';
-import { Spinner } from '../ui';
+import { Spinner } from '../../../ui';
 
 export const ProjectContent = () => {
   const { project, isLoading } = usePortfolioContext();

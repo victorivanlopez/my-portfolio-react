@@ -1,8 +1,8 @@
+import { usePortfolioContext } from '../../hooks';
 import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
 import { Modal } from '../../components/modal';
-import { ProjectContent } from '../../components/project-content';
-import { usePortfolioContext } from '../../hooks';
+import { ProjectContent } from '../../components/sections/projects/projectContent';
 import { MainContainer, MainContent } from './styles';
 
 export const PortfolioLayout = ({ children }) => {
