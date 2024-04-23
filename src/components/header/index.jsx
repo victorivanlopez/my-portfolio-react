@@ -32,7 +32,7 @@ export const Header = () => {
 
     const observer = new IntersectionObserver(callback, {
       rootMargin: '0px',
-      threshold: 0.75
+      threshold: 0.5
     });
 
     sections.forEach((section) => observer.observe(section));
