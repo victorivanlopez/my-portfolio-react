@@ -10,7 +10,24 @@ export const ContainerModal = styled.div`
 `;
 
 export const ContentModal = styled.div`
+  position: relative;
   max-width: 100rem;
   width: 95%;
   margin: 5rem auto 5rem auto;
+  padding: 2rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: 1rem;
+  @media (min-width: 768px) {
+    padding: 4rem;
+  }
 `;
+
+export const IconContainerModal = styled.div`
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  :hover {
+    cursor: pointer;
+  }
+`;
+

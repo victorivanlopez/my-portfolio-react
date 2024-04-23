@@ -8,7 +8,7 @@ export const ProjectCard = styled.div`
     cursor: pointer;
   }
   &:hover .img-project {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   &:hover h3 {
     background-size: 100% 0.2rem;

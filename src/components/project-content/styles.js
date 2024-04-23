@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const ContainerProject = styled.div`
-  padding: 4rem;
-  background-color: ${({ theme }) => theme.colors.white};
-  border-radius: 1rem;
-  font-size: 1.5rem;
-`;
-
 export const GridProject = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -47,22 +40,12 @@ export const DetailsProject = styled.ul`
     span {
       font-weight: 700;
     }
-  }
-`;
-
-export const LinksProject = styled.div`
-  display: flex;
-  gap: 2rem;
-  a {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-    font-weight: 500;
-    color: ${({ theme }) => theme.colors.grayDark};
-    transition: color 0.3s;
-    &:hover {
+    a {
+      padding: 0;
+      text-decoration: underline;
       color: ${({ theme }) => theme.colors.primary};
+      transition: color 0.3s;
+   
     }
   }
 `;
