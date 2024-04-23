@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PortfolioContext } from './';
 
-const urlProjects = `${import.meta.env.VITE_API_URL}/projects?sort=id:desc&populate=*`;
+const urlProjects = `${import.meta.env.VITE_API_URL}/projects?sort=createdAt:desc&populate=*`;
 const urlSkills = `${import.meta.env.VITE_API_URL}/skills?populate=*`;
 const urlExperiences = `${import.meta.env.VITE_API_URL}/experiences`;
 
