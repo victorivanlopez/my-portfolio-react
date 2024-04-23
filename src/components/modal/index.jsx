@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import { usePortfolioContext } from '../../hooks';
-import { ContainerModal, ContentModal } from './styles';
+import { ContainerModal, ContentModal, IconContainerModal } from './styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 export const Modal = ({ children }) => {
   const { hiddenModal } = usePortfolioContext();
@@ -18,6 +20,11 @@ export const Modal = ({ children }) => {
       onClick={onClickModal}
     >
       <ContentModal className='scale-up-center'>
+        <IconContainerModal
+          onClick={hiddenModal}
+        >
+          <FontAwesomeIcon icon={faX} size='lg' color='#575655' />
+        </IconContainerModal>
         {children}
       </ContentModal>
     </ContainerModal>
