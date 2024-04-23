@@ -4,16 +4,18 @@ import {
   ContentProject,
   DescriptionProject,
   DetailsProject,
+  DetailsProjectItem,
   GridProject,
 } from './styles';
 import { Spinner } from '../../../ui';
+import { ProjectTechnologies } from '../projectTechnologies';
 
 export const ProjectContent = () => {
   const { project, isLoading } = usePortfolioContext();
 
   if ((isLoading)) return <Spinner />
 
-  const { title, description, client, repoURL, siteURL, cover } = project?.attributes;
+  const { title, description, client, repoURL, siteURL, cover, technologies } = project?.attributes;
 
   const imageURL = cover.data.attributes.formats.small.url;
   const siteURLText = siteURL?.split('//')[1];
@@ -33,18 +35,25 @@ export const ProjectContent = () => {
           </DescriptionProject>
           <h3>Información adicional</h3>
           <DetailsProject>
-            <li>
-              <p><span>Cliente:</span> {client}</p>
-            </li>
-            <li>
-              <p><span>URL:</span> <a href={siteURL} target='_blank'>{siteURLText}</a></p>
-            </li>
+            <DetailsProjectItem>
+              <span>Cliente:</span>
+              <p>{client}</p>
+            </DetailsProjectItem>
+            <DetailsProjectItem>
+              <span>Tecnologías:</span>
+              <ProjectTechnologies technologies={technologies} />
+            </DetailsProjectItem>
+            <DetailsProjectItem>
+              <span>URL:</span>
+              <a href={siteURL} target='_blank'>{siteURLText}</a>
+            </DetailsProjectItem>
             {
               (repoURL) && (
                 <>
-                  <li>
-                    <p><span>Repositorio:</span> <a href={repoURL} target='_blank'>{repoURLText}</a></p>
-                  </li>
+                  <DetailsProjectItem>
+                    <span>Repositorio:</span>
+                    <a href={repoURL} target='_blank'>{repoURLText}</a>
+                  </DetailsProjectItem>
                 </>
               )
             }
