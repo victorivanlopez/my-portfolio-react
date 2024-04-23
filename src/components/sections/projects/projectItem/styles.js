@@ -75,14 +75,6 @@ export const ProjectFooter = styled.div`
   gap: 2rem;
   border-top: 1px solid ${({ theme }) => theme.colors.grayLight};
   padding: 1.5rem;
-`;
-
-export const ProjectTechnologies = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-
   img {
     width: 2.5rem;
     height: 2.5rem;

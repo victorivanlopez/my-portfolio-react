@@ -26,26 +26,29 @@ export const DescriptionProject = styled.div`
 export const DetailsProject = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
-  li {
-    
-    border-bottom: 1px solid ${({ theme }) => theme.colors.grayLight};
-    &:last-of-type {
+  gap: 1rem;
+`;
+
+export const DetailsProjectItem = styled.li`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.grayLight};
+  &:last-of-type {
     border-bottom: 0;
-    }
-    p {
-      margin: 0;
-      padding: 1rem 0;
-    }
-    span {
-      font-weight: 700;
-    }
-    a {
-      padding: 0;
-      text-decoration: underline;
-      color: ${({ theme }) => theme.colors.primary};
-      transition: color 0.3s;
-   
-    }
+    padding-bottom: 0;
+  }
+  p {
+    margin: 0;
+  }
+  span {
+    font-weight: 700;
+  }
+  a {
+    padding: 0;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.colors.primary};
+    transition: color 0.3s;
   }
 `;
