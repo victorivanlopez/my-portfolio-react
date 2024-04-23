@@ -1,11 +1,11 @@
 import { usePortfolioContext } from '../../../../hooks';
+import { ProjectTechnologies } from '../projectTechnologies';
 import {
   ProjectButton,
   ProjectCard,
   ProjectContent,
   ProjectFooter,
   ProjectImage,
-  ProjectTechnologies
 } from './styles';
 
 
@@ -44,15 +44,7 @@ export const ProjectItem = ({ project }) => {
       </ProjectContent>
 
       <ProjectFooter>
-        <ProjectTechnologies>
-          {
-            technologies.data.map(technologie => (
-              <li key={technologie.id}>
-                <img src={technologie.attributes.url} alt={technologie.attributes.name} />
-              </li>
-            ))
-          }
-        </ProjectTechnologies>
+        <ProjectTechnologies technologies={technologies} />
       </ProjectFooter>
     </ProjectCard>
   )
