@@ -2,10 +2,10 @@
 
 ## Table of Contents 📘
 
-1. [Description](#description)
-2. [Preview](#preview)
-3. [Installation](#installation)
-4. [Built with](#built-with)
+1. [Description](#description-📝)
+2. [Preview](#preview-💻)
+3. [Installation](#installation-👨‍💻)
+4. [Built with](#built-with-🛠️)
 
 ## Description 📝
 - Development with React
@@ -41,4 +41,4 @@ To install and run the project locally, follow these steps:
 - [Strapi Blocks React Renderer](https://github.com/strapi/blocks-react-renderer)
 - [Fontawesome with React](https://docs.fontawesome.com/web/use-with/react)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents-📘)**
