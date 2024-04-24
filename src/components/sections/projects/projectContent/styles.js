@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 
 export const GridProject = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 4rem;
+  
   margin: 2rem 0;
   @media (min-width: 768px) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
   }
 `;
 
 export const ContentProject = styled.div`
+  margin-top: 2rem;
   p {
     margin-bottom: 1.5rem;
   }
@@ -32,6 +33,7 @@ export const DetailsProject = styled.ul`
 export const DetailsProjectItem = styled.li`
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid ${({ theme }) => theme.colors.grayLight};

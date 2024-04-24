@@ -14,7 +14,7 @@ export const ContentModal = styled.div`
   max-width: 100rem;
   width: 95%;
   margin: 5rem auto 5rem auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 1rem;
   @media (min-width: 768px) {
