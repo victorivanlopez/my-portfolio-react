@@ -16,7 +16,9 @@
 ## Preview 💻
 | **Home** |
 | :-------------: |
-| ![Home Page](https://i.imgur.com/jyTXpjo.gif) |
+| ![Home Page](https://i.imgur.com/BTchoee.png) |
+
+**Visit**: [victorivanlopez.com](https://www.victorivanlopez.com/)
 
 ## Installation 👨‍💻
 
