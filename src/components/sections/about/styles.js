@@ -13,6 +13,7 @@ export const AboutInformation = styled.div`
 
   span {
     color: ${({ theme }) => theme.colors.primary};
+    font-weight: 500;
   }
 
   p {
