@@ -8,10 +8,10 @@ export const AboutSection = () => {
 
       <AboutContent>
         <AboutInformation>
-          <h3>Hola. Soy <span>Víctor Iván López</span></h3>
-          <p>Destaco en el trato con clientes, desarrollando sitios web a medida utilizando principalmente WordPress como CMS para facilitar la gestión del contenido, lo que me ha permitido comprender a fondo las necesidades del cliente y ofrecer soluciones efectivas y creativas para sus negocios.</p>
-          <p>También cuento con sólida experiencia en el desarrollo de aplicaciones web utilizando tecnologías modernas del lado del Front-end como React y Typescript.</p>
-          <p>Motivado por el aprendizaje continuo y la mejora constante, estoy ansioso por contribuir al desarrollo de proyectos desafiantes y significativos.</p>
+          <p>Ingeniero en Telemática graduado de la Universidad de Colima, con sólida experiencia en el desarrollo de aplicaciones web centrándome principalmente en el ámbito del <span>Front-end y WordPress.</span></p>
+          <p>Mi experiencia abarca el dominio de tecnologías como <span>React y TypeScript</span>, así como una habilidad probada en la implementación de <span>soluciones utilizando WordPress para proyectos con clientes.</span></p>
+          <p>Destaco por mi <span>capacidad para establecer una buena comunicación con mis clientes</span>, lo que me ha permitido comprender a fondo sus necesidades para sus proyectos.</p>
+          <p>Motivado por el <span>aprendizaje continuo y mejora constante</span>, estoy ansioso por aportar mi experiencia y pasión por la tecnología para seguir creciendo profesionalmente.</p>
         </AboutInformation>
 
         <AboutBiography>
