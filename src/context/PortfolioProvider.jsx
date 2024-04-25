@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { PortfolioContext } from './';
 
 const urlProjects = `${import.meta.env.VITE_API_URL}/projects?sort=createdAt:desc&populate=*`;
-const urlSkills = `${import.meta.env.VITE_API_URL}/skills?populate=*`;
-const urlExperiences = `${import.meta.env.VITE_API_URL}/experiences`;
+const urlSkills = `${import.meta.env.VITE_API_URL}/skills?sort=createdAt:desc&populate=*`;
+const urlExperiences = `${import.meta.env.VITE_API_URL}/experiences?sort=createdAt:desc`;
 
 export const PortfolioProvider = ({ children }) => {
 
