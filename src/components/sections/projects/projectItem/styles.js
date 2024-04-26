@@ -29,7 +29,7 @@ export const ProjectImage = styled.div`
 
 export const ProjectContent = styled.div`
   padding: 2rem;
-
+  text-align: center;
   h3 {
     display: inline-block;
     background-image: linear-gradient(to right, ${({ theme }) => theme.colors.primary} 0%, ${({ theme }) => theme.colors.primary} 100%);
@@ -60,6 +60,7 @@ export const ProjectButton = styled.div`
     border: none;
     text-decoration: underline;
     font-weight: 500;
+    font-size: 1.4rem;
     color: ${({ theme }) => theme.colors.grayDark};
     transition: color 0.3s;
     &:hover {
