@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContent = styled.div`
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     margin-left: 20rem;
   }
 `;

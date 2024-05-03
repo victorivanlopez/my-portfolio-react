@@ -10,7 +10,7 @@ export const ResumeSkill = styled(ResumeChild)`
 
   img {
     width: 3rem;
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       width: 6rem;
     }
   }
@@ -19,8 +19,8 @@ export const ResumeSkill = styled(ResumeChild)`
     font-size: 1.4rem;
     margin: 0;
     text-align: center;
-    @media (min-width: 768px) {
-      font-size: 1.7rem;
+    @media (min-width: 1200px) {
+      font-size: 1.6rem;
     }
   }
 `;

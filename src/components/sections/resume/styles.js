@@ -29,12 +29,12 @@ export const TabsButtons = styled.button`
 export const ResumeContainer = styled.div`
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
   ${(props) => (props.$current === 'experience') && css`
-      grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 1fr));
   `}
   gap: 4rem;
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
     ${(props) => (props.$current === 'experience') && css`
       grid-template-columns: repeat(2, 1fr);

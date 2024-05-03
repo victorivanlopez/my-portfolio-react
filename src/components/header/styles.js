@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const HeaderMain = styled.header`
-@media (min-width: 993px) {
+@media (min-width: 1200px) {
   position: fixed;
   z-index: 1;
   background-color: ${({ theme }) => theme.colors.white};
@@ -19,7 +19,7 @@ export const Navegation = styled.div`
   justify-content: space-between;
   padding: 2rem;
   position: relative;
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     padding: 0;
     flex-direction: column;
     justify-content: space-around;
@@ -28,7 +28,7 @@ export const Navegation = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ export const InfoContainer = styled.div`
   }
   .photo {
     display: none;
-    @media (min-width: 993px) {
+    @media (min-width: 1200px) {
       display: flex;
     }
   }
@@ -49,7 +49,7 @@ export const InfoContainer = styled.div`
     font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
-    @media (min-width: 993px) {
+    @media (min-width: 1200px) {
       margin-top: 1rem;
       font-size: 1.6rem;
       font-weight: 600;
@@ -66,14 +66,14 @@ export const HamburguerButton = styled.button`
   margin-left: auto;
   background-color: ${({ theme }) => theme.colors.white};
   border: none;
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
 
 export const MenuContainer = styled.nav`
   display: none;
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     display: block;
   }
 `;
@@ -90,7 +90,7 @@ export const MenuContainerMovil = styled(MenuContainer)`
     max-height: 40rem;
     padding: 2rem 0;
   `}
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
@@ -100,7 +100,7 @@ export const MenuSocialContainer = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     display: flex;  
   }
   svg {
