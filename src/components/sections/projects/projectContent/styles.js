@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const GridProject = styled.div`
-  
   margin: 2rem 0;
   @media (min-width: 768px) {
     display: grid;
@@ -12,15 +11,21 @@ export const GridProject = styled.div`
 
 export const ContentProject = styled.div`
   margin-top: 2rem;
-  p {
-    margin-bottom: 1.5rem;
+  @media (min-width: 768px) {
+    margin-top: 0;
   }
 `;
 
 export const DescriptionProject = styled.div`
+  p {
+    margin-bottom: 1.5rem;
+  }
   ul {
     list-style: disc;
-    padding: 0 1rem 1.5rem 1rem;
+    padding: 0 0 1.5rem 1rem;
+    li {
+      margin-bottom: 1rem;
+    }
   }
 `;
 
