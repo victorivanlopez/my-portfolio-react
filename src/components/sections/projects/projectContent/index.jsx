@@ -40,10 +40,6 @@ export const ProjectContent = () => {
               <p>{client}</p>
             </DetailsProjectItem>
             <DetailsProjectItem>
-              <span>Tecnologías:</span>
-              <ProjectTechnologies technologies={technologies} />
-            </DetailsProjectItem>
-            <DetailsProjectItem>
               <span>URL:</span>
               <a href={siteURL} target='_blank'>{siteURLText}</a>
             </DetailsProjectItem>
@@ -57,6 +53,9 @@ export const ProjectContent = () => {
                 </>
               )
             }
+            {/* <DetailsProjectItem>
+              <ProjectTechnologies technologies={technologies} />
+            </DetailsProjectItem> */}
           </DetailsProject>
         </ContentProject>
       </GridProject>
