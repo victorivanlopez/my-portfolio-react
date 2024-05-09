@@ -50,7 +50,12 @@ export const ResumeSection = () => {
       </ResumeContainer>
 
       <ButtonContainer>
-        <ButtonPrimary href="#">Descargar mi CV</ButtonPrimary>
+        <ButtonPrimary
+          href="/curriculum-victor-ivan-lopez.pdf"
+          target='_blank'
+        >
+          Descargar mi CV
+        </ButtonPrimary>
       </ButtonContainer>
     </section>
   )
