@@ -15,7 +15,7 @@ export const ProjectContent = () => {
 
   if ((isLoading)) return <Spinner />
 
-  const { title, description, client, repoURL, siteURL, cover, technologies } = project?.attributes;
+  const { title, description, client, repoURL, siteURL, cover } = project?.attributes;
 
   const imageURL = cover.data.attributes.formats.small.url;
   const siteURLText = siteURL?.split('//')[1];
@@ -26,14 +26,8 @@ export const ProjectContent = () => {
       <h2>{title}</h2>
 
       <GridProject>
-        <img src={imageURL} alt={`Portada sitio web ${title}`} />
-
-        <ContentProject>
-          <h3>Descripción</h3>
-          <DescriptionProject>
-            <BlocksRenderer content={description} />
-          </DescriptionProject>
-          <h3>Información adicional</h3>
+        <div>
+          <img src={imageURL} alt={`Portada sitio web ${title}`} />
           <DetailsProject>
             <DetailsProjectItem>
               <span>Cliente:</span>
@@ -53,10 +47,14 @@ export const ProjectContent = () => {
                 </>
               )
             }
-            {/* <DetailsProjectItem>
-              <ProjectTechnologies technologies={technologies} />
-            </DetailsProjectItem> */}
           </DetailsProject>
+        </div>
+
+        <ContentProject>
+          <h3>Descripción</h3>
+          <DescriptionProject>
+            <BlocksRenderer content={description} />
+          </DescriptionProject>
         </ContentProject>
       </GridProject>
     </>
