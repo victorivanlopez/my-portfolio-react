@@ -22,7 +22,7 @@ export const DescriptionProject = styled.div`
   }
   ul {
     list-style: disc;
-    padding: 0 0 1.5rem 1rem;
+    padding: 0 0 1rem 2rem;
     li {
       margin-bottom: 1rem;
     }
@@ -33,6 +33,7 @@ export const DetailsProject = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 2rem;
 `;
 
 export const DetailsProjectItem = styled.li`
