@@ -13,12 +13,13 @@ export const ContentModal = styled.div`
   position: relative;
   max-width: 100rem;
   width: 95%;
-  margin: 5rem auto 5rem auto;
+  margin: 1rem auto;
   padding: 4rem 2rem;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 1rem;
   @media (min-width: 768px) {
     padding: 4rem;
+    margin: 5rem auto;
   }
 `;
 
