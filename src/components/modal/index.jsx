@@ -19,7 +19,7 @@ export const Modal = ({ children }) => {
       ref={element}
       onClick={onClickModal}
     >
-      <ContentModal className='scale-up-center'>
+      <ContentModal className='scale-up-vertical-center'>
         <IconContainerModal
           onClick={hiddenModal}
         >
