@@ -32,23 +32,7 @@ export const PortfolioProvider = ({ children }) => {
         fetch(urlSkills),
         fetch(urlExperiences),
       ]);
-      if (resProjects.status === 404 || resSkills.status === 404 || resExperiences.status === 404) {
-        setProjects(null);
-        setSkills(null);
-        setExperiences(null);
-        setIsLoading(false);
-        setHasError(`Servidor no encontrado.`);
-        return;
-      }
-      if (resProjects.status === 401 || resSkills.status === 401 || resExperiences.status === 401) {
-        setProjects(null);
-        setSkills(null);
-        setExperiences(null);
-        setIsLoading(false);
-        setHasError(`Ha ocurrido un error en el servidor.`);
-        return;
-      }
-      if (resProjects.status === 200 || resSkills.status === 200 || resExperiences.status === 200) {
+      if (resProjects.status === 200 && resSkills.status === 200 && resExperiences.status === 200) {
         const [{ data: dataProjects }, { data: dataSkills }, { data: dataExperiences }] = await Promise.all([
           resProjects.json(),
           resSkills.json(),
@@ -59,6 +43,12 @@ export const PortfolioProvider = ({ children }) => {
         setExperiences(dataExperiences);
         setIsLoading(false);
         setHasError(null);
+      } else {
+        setProjects(null);
+        setSkills(null);
+        setExperiences(null);
+        setIsLoading(false);
+        setHasError(`Ha ocurrido un error en el servidor.`);
       }
     } catch (error) {
       setProjects(null);
