@@ -66,21 +66,14 @@ export const PortfolioProvider = ({ children }) => {
       setExperiences(null);
       setIsLoading(false);
       setHasError('Error en el servidor.');
+      console.log(error);
     }
   }
 
   const getProject = async (projectId) => {
-    const url = `${import.meta.env.VITE_API_URL}/projects/${projectId}?populate=*`;
-    setIsLoading(true);
-    setHasError(null);
-    try {
-      const response = await fetch(url);
-      const { data } = await response.json();
-      setProject(data);
-      setIsLoading(false);
-      setHasError(null);
-    } catch (error) {
-      console.log(error);
+    const projectFound = projects.find(project => project.id === projectId);
+    if (projectFound) {
+      setProject(projectFound);
     }
   }
 
