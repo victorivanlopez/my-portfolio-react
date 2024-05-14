@@ -117,5 +117,5 @@ export const GlobalStyles = createGlobalStyle`
 
   .scale-up-center{animation:scale-up-center 0.6s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
 
-  .scale-up-vertical-center{animation:scale-up-vertical-center 0.4s} @keyframes scale-up-vertical-center{0%{transform:scaleY(.2)}100%{transform:scaleY(1)}}
+  .scale-up-vertical-center{animation:scale-up-vertical-center 0.3s} @keyframes scale-up-vertical-center{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}
 `;
