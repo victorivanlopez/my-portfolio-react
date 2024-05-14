@@ -33,7 +33,10 @@ export const DetailsProject = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem;
+  margin: 4rem 0;
+  @media (min-width: 768px) {
+    margin: 4rem 0 0 0;
+  }
 `;
 
 export const DetailsProjectItem = styled.li`
