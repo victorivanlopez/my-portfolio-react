@@ -6,7 +6,7 @@ export const SkillItem = ({ skill }) => {
   const iconName = skill.icon.data.attributes.url;
 
   return (
-    <ResumeSkill className='scale-up-top'>
+    <ResumeSkill className='scale-up-vertical-center'>
       <img src={iconURL} alt={iconName} />
       <h3>{skill.name}</h3>
     </ResumeSkill>

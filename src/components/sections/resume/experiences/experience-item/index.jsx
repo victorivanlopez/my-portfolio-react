@@ -6,7 +6,7 @@ export const ExperienceItem = ({ experience }) => {
   const { date, place, title, company, description } = experience;
 
   return (
-    <ResumeExperience className='scale-up-top'>
+    <ResumeExperience className='scale-up-vertical-center'>
       <ResumeExperienceHeader>
         <p>{date}</p>
         <p>{place}</p>
