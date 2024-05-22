@@ -51,7 +51,7 @@ export const ResumeSection = () => {
 
       <ButtonContainer>
         <ButtonPrimary
-          href="/curriculum-victor-ivan-lopez.pdf"
+          href="https://drive.google.com/file/d/1Gzfz_5DZnHxpHuFMnC9hZW19PZVpVBtO/view?usp=drive_link"
           target='_blank'
         >
           Descargar mi CV
